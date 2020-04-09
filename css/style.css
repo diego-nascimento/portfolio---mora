@@ -12,9 +12,20 @@ body {
   height: 40px;
   border-radius: 5px;
   outline: 0;
-  color: black;
+  color: #000;
   font-weight: bold;
   border: 0;
+}
+
+.btn-claro {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  outline: 0;
+  background-color: #3B1D98;
+  font-weight: bold;
+  border: 0;
+  color: #fff;
 }
 
 p {
@@ -45,12 +56,15 @@ header nav {
   display: flex;
   margin-right: 25px;
   font-weight: bold;
+  align-items: center;
+  justify-content: center;
 }
 
-header nav ul {
+header nav .lista-menu {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
 }
 
 header nav ul li {
@@ -116,6 +130,11 @@ header nav ul li:hover {
   color: rgb(218, 216, 216);
   font-weight: bolder;
   letter-spacing: 5px;
+  margin-bottom: 15px;
+}
+
+.textotitulo-dark {
+  color: #000;
 }
 
 .introducao div .btn {
@@ -184,6 +203,40 @@ header nav ul li:hover {
   height: 3px;
   background-color: #000;
   margin: 10px auto 14px auto;
+}
+
+/*portfolio*/
+
+.portfolio {
+  background-color: #3B1D98;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio .img-portfolio img {
+  border-radius: 7px;
+}
+
+.portfolio .botao-portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.portfolio .text-portfolio {
+  background-color: white;
+  margin: 20px 0px;
+  border-radius: 25px;
+  padding: 15px 10px;
+}
+
+.portfolio .subtitulo {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 

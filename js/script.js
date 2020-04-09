@@ -1,5 +1,4 @@
 if(window.SimpleAnime){
-  console.log(`teste`)
   new SimpleAnime()
 }
 
@@ -11,5 +10,13 @@ if(window.SimpleSlide) {
       pauseOnHover: true, // pausa a transição automática
       nav: true
     });
+}
+
+if(window.SimpleSlide) {
+  new SimpleSlide({
+    slide: "portfolio", // nome do atributo data-slide="principal"
+    
+    nav: true
+  });
 }
 
