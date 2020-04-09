@@ -72,14 +72,15 @@ header nav ul li a {
 }
 
 header nav ul li:hover {
-  box-shadow: 0px 3px 5px black;
+  box-shadow: 0px 3px 5px #513779;
+  background-color: rgba(81, 55, 121, .3);
 }
 
 /*introducao*/
 
 .introducao {
   height: 400px;
-  background-color: black;
+  background-color: #3B1D98;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,7 +96,7 @@ header nav ul li:hover {
 
 .titulo {
   font-size: 36px;
-  color: rgb(218, 216, 216);
+  color: #fff;
   font-weight: bolder;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -104,10 +105,9 @@ header nav ul li:hover {
 .subtitulo {
   font-size: 24px;
   text-align: center;
-  color: rgb(218, 216, 216);
+  color: #fff;
   font-weight: bolder;
   letter-spacing: 5px;
-  
 }
 
 .textotitulo {
@@ -185,6 +185,7 @@ header nav ul li:hover {
   background-color: #000;
   margin: 10px auto 14px auto;
 }
+
 
                                                                                                                                                                                                                                                                                                                                                                                           
 
