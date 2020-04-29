@@ -8,15 +8,13 @@ if(window.SimpleSlide) {
       auto: true, // se o slide deve passar automaticamente
       time: 3000, // tempo de transição dos slides
       pauseOnHover: true, // pausa a transição automática
-      nav: true
+      
     });
 }
 
 if(window.SimpleSlide) {
   new SimpleSlide({
     slide: "portfolio", // nome do atributo data-slide="principal"
-    
-    nav: true
   });
 }
 

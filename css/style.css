@@ -58,6 +58,8 @@ header nav {
   font-weight: bold;
   align-items: center;
   justify-content: center;
+  flex: 1;
+  height: 60px;
 }
 
 header nav .lista-menu {
@@ -65,6 +67,9 @@ header nav .lista-menu {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  flex: 1;
+  height: 60px;
+  margin: 0;
 }
 
 header nav ul li {
@@ -75,6 +80,7 @@ header nav ul li {
   border-radius: 5px;
   width: 150px;
 }
+
 
 header nav ul li:first-child {
   margin-left: 0px;
@@ -108,12 +114,14 @@ header nav ul li:hover {
   align-items: center;
 }
 
-.titulo {
+h1.titulo {
   font-size: 36px;
   color: #fff;
   font-weight: bolder;
   letter-spacing: 5px;
   text-transform: uppercase;
+  text-align: center;
+  
 }
 
 .subtitulo {
@@ -215,28 +223,86 @@ header nav ul li:hover {
   align-items: center;
 }
 
-.portfolio .img-portfolio img {
-  border-radius: 7px;
+.portfolio .subtitulo {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.portfolio  .container .amostra {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.portfolio  .container .amostra .item3{
+  grid-column: 1/4;
+}
+
+.container .amostra .img-portfolio {
+  border-radius: 15px;
+}
+
+.amostra .img-portfolio img{
+  border-radius: 15px;
+}
+.portfolio .text-portfolio {
+  background-color: white;
+  
+  border-radius: 15px;
+  padding: 15px 10px;
 }
 
 .portfolio .botao-portfolio {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 20px 0;
   
 }
 
-.portfolio .text-portfolio {
+footer {
   background-color: white;
-  margin: 20px 0px;
-  border-radius: 25px;
-  padding: 15px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  padding: 20px 0;
 }
 
-.portfolio .subtitulo {
-  color: white;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+footer .redesocial {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.redesocial img {
+  width: 50px;
+}
+
+@media only screen and (max-width: 787px) {
+	.portfolio  .container .amostra {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .portfolio  .container .amostra .item3{
+    grid-column: 1;
+  }
+
+  .redesocial img {
+    width: 30px;
+  }
+  
+
+  footer .direitos {
+    text-align: center;
+    margin-top: 20px;
+  }
 }
 
 
