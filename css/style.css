@@ -39,6 +39,20 @@ img {
   max-width: 100%;
 }
 
+h1 {
+  transition: 1s;
+  font-size: 36px;
+}
+
+h2 {
+  transition: 1s;
+  font-size: 24px
+}
+
+h3, cite {
+  font-size: 20px
+}
+
 /*menu*/
 
 header {
@@ -99,6 +113,7 @@ header nav ul li:hover {
 /*introducao*/
 
 .introducao {
+  transition: 1s;
   height: 400px;
   background-color: #3B1D98;
   display: flex;
@@ -115,7 +130,6 @@ header nav ul li:hover {
 }
 
 h1.titulo {
-  font-size: 36px;
   color: #fff;
   font-weight: bolder;
   letter-spacing: 5px;
@@ -125,7 +139,6 @@ h1.titulo {
 }
 
 .subtitulo {
-  font-size: 24px;
   text-align: center;
   color: #fff;
   font-weight: bolder;
@@ -133,7 +146,6 @@ h1.titulo {
 }
 
 .textotitulo {
-  font-size: 16px;
   text-align: center;
   color: rgb(218, 216, 216);
   font-weight: bolder;
@@ -158,6 +170,7 @@ h1.titulo {
   margin-top: 20px;
 }
 .depoimento {
+  transition: 1s;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -166,20 +179,17 @@ h1.titulo {
 .depoimentos p {
   color: rgb(51, 51, 51);
   letter-spacing: 1px;
-  font-size: 12px;
   margin-top: 15px;
 }
 
 .depoimento .avatar {
-  margin-top: 20px;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 100%;
 }
 .depoimento cite {
   font-weight: bold;
   margin-top: 15px;
-  font-size: 16px;
   text-transform: uppercase;
   font-style: normal;
   letter-spacing: .1em;
@@ -187,11 +197,8 @@ h1.titulo {
 
 .depoimento blockquote {
   margin-top: 5px;
-  margin-bottom: 50px;
   font-style: italic;
   text-align: center;
-  font-size: 16px;
-  line-height: 24px;
 }
 
 
@@ -221,15 +228,18 @@ h1.titulo {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 1s;
 }
 
 .portfolio .subtitulo {
+  transition: 1s;
   color: white;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
 .portfolio  .container .amostra {
+  transition: 1s;
   display: grid;
   width: 100%;
   grid-template-columns: repeat(2, 1fr);
@@ -237,17 +247,21 @@ h1.titulo {
 }
 
 .portfolio  .container .amostra .item3{
+  transition: 1s;
   grid-column: 1/4;
 }
 
 .container .amostra .img-portfolio {
+  transition: 1s;
   border-radius: 15px;
 }
 
 .amostra .img-portfolio img{
+  transition: 1s;
   border-radius: 15px;
 }
 .portfolio .text-portfolio {
+  transition: 1s;
   background-color: white;
   
   border-radius: 15px;
@@ -255,6 +269,7 @@ h1.titulo {
 }
 
 .portfolio .botao-portfolio {
+  transition: 1s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -263,6 +278,7 @@ h1.titulo {
 }
 
 footer {
+  transition: 1s;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -283,6 +299,42 @@ footer .redesocial {
 }
 
 @media only screen and (max-width: 787px) {
+  p, button{
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  blockquote, cite {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  li {
+    font-size: 14px;
+  }
+
+  h1{
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+
+
+  .depoimento .avatar {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+  }
 	.portfolio  .container .amostra {
     display: grid;
     width: 100%;
@@ -298,7 +350,6 @@ footer .redesocial {
     width: 30px;
   }
   
-
   footer .direitos {
     text-align: center;
     margin-top: 20px;

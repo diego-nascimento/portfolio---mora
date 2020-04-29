@@ -9,7 +9,7 @@
   [data-slide] > .active {
     position: relative;
     opacity: 1;
-    transition:  opacity 1000ms;
+    transition:  opacity 1500ms;
   }
   
   /* 6 CSS recomendado para a navegação */
