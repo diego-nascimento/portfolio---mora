@@ -203,7 +203,9 @@ header nav ul li:hover {
   display: grid;
   justify-content: center;
   width: 100%;
+  
 }
+
 
 .depoimentos .textotitulo{
   animation-delay: 0.2s;
