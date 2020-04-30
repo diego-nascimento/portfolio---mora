@@ -1,20 +1,12 @@
-if(window.SimpleAnime){
-  new SimpleAnime()
-}
 
-if(window.SimpleSlide) {
-    new SimpleSlide({
-      slide: "depoimentos", // nome do atributo data-slide="principal"
-      auto: true, // se o slide deve passar automaticamente
-      time: 5000, // tempo de transição dos slides
-      pauseOnHover: true, // pausa a transição automática
-      
-    });
-}
-
-if(window.SimpleSlide) {
-  new SimpleSlide({
-    slide: "portfolio", // nome do atributo data-slide="principal"
-  });
-}
+$('.depoimentos-slide').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear',
+  autoplay: true,
+  autoplaySpeed: 2000,
+  
+});
 

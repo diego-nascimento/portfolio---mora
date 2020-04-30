@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="./css/simpleslide.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/simpleanime.css">
-    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="/assets/icone.ico">
     <title>Ariane Miranda - Transformando idéias em conteudo</title>
@@ -15,7 +16,7 @@
 <body>
     <header>
         <nav class="container">
-            <ul class="lista-menu grid-16">
+            <ul class="lista-menu ">
                 <li>
                     <a href="portfolio.html">home</a>
                 </li>
@@ -41,30 +42,30 @@
     <main class="depoimentos" >
         <h2 class="subtitulo">Depoimentos</h2>
         <p class="textotitulo">Veja o que estão falando sobre mim</p>
-        <ul class="container" data-slide="depoimentos">
+        <ul class="container depoimentos-slide depoimentos">
             <li>
-                <div class="depoimento grid-16">
+                <div class="depoimento ">
                     <img src="./assets/avatar 1.png" alt="foto-cliente" class="avatar">
                     <cite>Noiva cadaver</cite>
-                    <blockquote class="grid-16">
+                    <blockquote class="">
                         Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal), de Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na época da Rena.
                     </blockquote>
                 </div>    
             </li>
             <li>
-                <div class="depoimento grid-16">
+                <div class="depoimento ">
                     <img src="./assets/avatar 1.png" alt="foto-cliente" class="avatar">
                     <cite>Noiva caer</cite>
-                    <blockquote class="grid-16">
+                    <blockquote class="">
                         Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal), de Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na época da Rena.
                     </blockquote>
                 </div>
             </li>
             <li>
-                <div class="depoimento grid-16">
+                <div class="depoimento">
                     <img src="./assets/avatar 1.png" alt="foto-cliente" class="avatar">
                     <cite>Noiva </cite>
-                    <blockquote class="grid-16">
+                    <blockquote >
                         Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal), de Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na época da Rena.
                     </blockquote>
                 </div>
@@ -89,8 +90,8 @@
                 </div>
             </div> 
         </div>
-        <div class="grid-16 botao-portfolio">
-            <a href="contato.html">
+        <div class="botao-portfolio">
+            <a href="portfolio.html">
                 <button class="btn">Veja meu Portfolio!!</button></a>
         </div>
     </section>
@@ -102,12 +103,15 @@
         </section>
 
         <section class="direitos">
-            <b>Diego Nascimento</b>
+           <p><b>Diego Nascimento</b></p> 
         <p>Todos os direitos reservados</p>
         </section>
     </footer>
     <script src="./js/simple-slide.js"></script>
-    <script src="./js/simple-anime.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/script.js"></script>
+    
 </body>
 </html>
