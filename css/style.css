@@ -121,7 +121,7 @@ header nav ul li {
   text-align: center;
   padding: 10px 0px ;
   margin-left: 10px;
-  transition: 0.3s;
+  transition: 0.6s;
   border-radius: 5px;
   width: 150px;
 }
@@ -132,21 +132,30 @@ header nav ul li:first-child {
 }
 
 header nav ul li a {
-  color: black;
   text-transform: uppercase;
+  text-decoration: none;
+  color: black;
 }
 
 header nav ul li:hover {
-  box-shadow: 0px 3px 5px #513779;
-  background-color: rgba(81, 55, 121, .3);
+  box-shadow: 0px 3px 5px #111;
+  background-color: rgba(0, 0, 0, .8);
+  color: #fff;
+}
+
+header nav ul li:hover a{
+  color: white;
 }
 
 /*introducao*/
 
 .introducao {
   transition: 1s;
-  height: 400px;
-  background-color: #3B1D98;
+  height: 100vh;
+  background: url('../assets/logo.jpg') no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,7 +171,7 @@ header nav ul li:hover {
 }
 
 .introducao h1.titulo {
-  color: #fff;
+  color: #000;
   font-weight: bolder;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -172,10 +181,11 @@ header nav ul li:hover {
 
 .subtitulo {
   text-align: center;
-  color: #fff;
+  color: #000;
   font-weight: bolder;
   letter-spacing: 5px;
   animation: 1s subir forwards;
+  margin-bottom: 10px;
 }
 
 .textotitulo {
@@ -183,7 +193,7 @@ header nav ul li:hover {
   color: rgb(218, 216, 216);
   font-weight: bolder;
   letter-spacing: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .textotitulo-dark {
@@ -192,8 +202,9 @@ header nav ul li:hover {
 
 .introducao div .btn {
   margin-top: 20px;
-  color: rgb(36, 35, 35);
+  color: #fff;
   animation: 1s subir forwards;
+  background-color: #000;
 }
 
 /*depoimentos*/
@@ -385,6 +396,20 @@ footer b {
   h3 {
     font-size: 14px;
   }
+  
+  
+.introducao {
+  transition: 1s;
+  height: 450px;
+  background: url('../assets/logo.jpg') no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
   
   .depoimento .avatar {
     margin-top: 5px;

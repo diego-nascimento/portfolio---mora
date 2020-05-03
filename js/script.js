@@ -1,4 +1,3 @@
-
 $('.depoimentos-slide').slick({
   dots: true,
   infinite: true,
