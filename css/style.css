@@ -10,6 +10,7 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
+  
 }
 
 .container {
@@ -26,6 +27,7 @@ body {
   color: #000;
   font-weight: bold;
   border: 0;
+  cursor: pointer;
 }
 
 .btn-claro {
@@ -37,6 +39,7 @@ body {
   font-weight: bold;
   border: 0;
   color: #fff;
+  cursor: pointer;
 }
 
 p {
@@ -90,8 +93,6 @@ header {
   justify-content: center;
   position: fixed;
   z-index: 10;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 
 header nav {
@@ -126,6 +127,22 @@ header nav ul li {
   width: 150px;
 }
 
+.selected {
+  box-shadow: 0px 3px 5px #111;
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+}
+
+.selected a {
+  color: #fff;
+}
+
+.selected:hover {
+  box-shadow: 0px 3px 5px #111;
+  background-color: rgba(0, 0, 0, .5);
+  color: rgb(199, 179, 179);
+}
+
 
 header nav ul li:first-child {
   margin-left: 0px;
@@ -152,28 +169,32 @@ header nav ul li:hover a{
 .introducao {
   transition: 1s;
   height: 100vh;
-  background: url('../assets/logo.jpg') no-repeat;
+  background: url('../assets/fundo-introducao.jpg') no-repeat;
   background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 }
 
 .introducao div {
-  padding: 0px 10px;
+  padding: 10px 10px;
   margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,.7);
 }
 
 .introducao h1.titulo {
-  color: #000;
+  color: #fff;
   font-weight: bolder;
-  letter-spacing: 5px;
+  letter-spacing: 9px;
   text-transform: uppercase;
   text-align: center;
   animation: 1s subir forwards;
@@ -181,7 +202,7 @@ header nav ul li:hover a{
 
 .subtitulo {
   text-align: center;
-  color: #000;
+  color: #fff;
   font-weight: bolder;
   letter-spacing: 5px;
   animation: 1s subir forwards;
@@ -202,9 +223,9 @@ header nav ul li:hover a{
 
 .introducao div .btn {
   margin-top: 20px;
-  color: #fff;
+  color: #000;
   animation: 1s subir forwards;
-  background-color: #000;
+  background-color: #fff;
 }
 
 /*depoimentos*/
@@ -215,7 +236,6 @@ header nav ul li:hover a{
   width: 100%;
   
 }
-
 
 .depoimentos .textotitulo{
   animation-delay: 0.2s;
@@ -283,12 +303,14 @@ header nav ul li:hover a{
 /*portfolio*/
 
 .portfolio {
-  background-color: #3B1D98;
+  background-color: #000;
   padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+
 
 .portfolio .subtitulo {
   animation-delay: 0.4s;
@@ -397,20 +419,6 @@ footer b {
     font-size: 14px;
   }
   
-  
-.introducao {
-  transition: 1s;
-  height: 450px;
-  background: url('../assets/logo.jpg') no-repeat;
-  background-size: cover;
-  background-position: center;
-  
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
   
   .depoimento .avatar {
     margin-top: 5px;
