@@ -448,6 +448,17 @@ footer b {
 }
 
 @media only screen and (max-width: 450px) {
+  .introducao {
+    transition: 1s;
+    height: 450px;
+    background: url('../assets/fundo-introducao.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
   li {
     font-size: 12px;
